@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+
+:root{
+    --Blue500:#1366e2;
+    --Blue600: #112dcc;
+    --Green: #39c95d;
+    --Green400: #2c9947;
+    --white: #fff;
+    --black: #000000;
+    --Red: #ff0000;
+    --Red400:#c40808;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 650px;
+    background-color: var(--Blue600);
+    color: var(--white);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+#item-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#name{
+    padding: 5px;
+    border-radius: 5px;
+    width: 26em;
+}
+
+.item-form_textarea{
+    height: 3.5em;
+    border-radius: 5px;
+    resize: none;
+}
+
+.item-form_button{
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--Green);
+    color: var(--white);
+}
+
+.header{
+    margin-bottom: 10px;
+}
+
+.item-list{
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px;
+    width: 21.2em;
+    border-radius: 5px;
+}
+
+.item-card{
+    background-color: var(--Blue500);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.item-card_footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+.item-card_button-item-card__button--edit{
+    background-color: var(--Green);
+    border-radius: 5px;
+    padding: 3px;
+    width: 5em;
+    border: #fff 1px solid ;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.item-card_button-item-card_button--delete{
+    background-color: var(--Red);
+    border-radius: 5px;
+    padding: 3px;
+    width: 5em;
+    border: #fff 1px solid ;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.item-card_button-item-card__button--edit:hover{
+ background-color: var(--Green400);
+
+}
+
+.item-card_button-item-card_button--delete:hover{
+    background-color: var(--Red400);
+}
+
+#item-form_get{
+    margin-bottom: 5px;
+}
+
+.item-card_header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.item-card_body{
+    text-align: initial;
+}
+
+.item-card_header{
+    text-align: initial;
+}
+
+/*REMOVER QUANDO COMEÇAR JAVASCRIPT.
+.
+.*/
+.item-card_status{
+    color: var(--Red400);
+}
