@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVALIAÇÃO - API</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+                <h1 class="header__title"> TODO List </h1>
+                <section id="form-container" class="form-container">
+                    <h2 class="form-container__title">Cadastro de Atividades</h2>
+                        <form id="item-form" action="#"  method="post"> 
+                            <input 
+                            type="text" 
+                            name="titulo" 
+                            id="titulo" 
+                            class="item-form__input"
+                            placeholder="Digite a Atividade"
+                            />
+                            <textarea id="descricao" class="item-form__textarea" placeholder="Descreva Sua Atividade"></textarea>
+                            <button type="submit" class="item-form__button"> Cadastrar </button>
+                        </form>
+                        <div id="message" class="message"> Mensagem de Retorno </div>
+                </section>
+        </header>
+
+        <main class="main">
+            <section id="item-list" class="item-list"> 
+                <article class="item-card"> 
+
+                    <header class="item-card__header"> 
+                        <h1 class="item-card__title"> Título da Atividade </h1>
+                    </header>
+
+                    <section class="item-card__body"> 
+                        <p class="item-card__description">
+                            Essa é a Descrição da Atividade 
+                        </p>
+                    </section>
+
+                    <footer class="item-card__footer"> 
+                        <button class="item-card__button item-card__button--edit"> 
+                            Editar 
+                        </button>
+
+                        <button class="item-card__button item-card__button--delete"> 
+                            Excluir 
+                        </button>
+                    </footer> 
+
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="/frontend/js/app.js"> </script>
+    
+</body>
+</html>
